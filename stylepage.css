@@ -157,4 +157,14 @@ a:hover {
     main {
         padding: 0 15px;
     }
+
+    .image-text {
+    display: flex;
+    align-items: flex-start; /* Aligns items to the top */
+}
+
+.image-text img {
+    margin-right: 20px; /* Adds space between the image and text */
+}
+
 }
