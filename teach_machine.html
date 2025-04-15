@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project #3: Teachable Machines – Sound Classification Model</title>
+    <link rel="stylesheet" href="stylepage.css">
+</head>
+
+<body>
+    <header>
+        <h1>Teachable Machines – Sound Classification Model</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="tech-hero.html">Tech Hero</a></li>
+                <li><a href="teach_machine.html">Teachable Machine</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Project Statement: Teaching a Machine to Listen, Reflect, and Learn</h2>
+            <p>Creating a sound classifier using Google’s Teachable Machine has been an enlightening journey, one that allowed us to explore the basic principles of machine learning in a hands-on, accessible way. While the model we built is extremely simple—recognizing only a handful of sounds like "hello," clapping, and humming—it has nonetheless provided us with valuable insights into the process of machine learning, its limitations, and its potential societal impact.</p>
+            <p>At its core, our model’s task is very straightforward. It listens for audio inputs, and based on pre-recorded examples, it classifies them into one of several categories. This simplicity is key to the nature of our project, but as we’ll explain, even such a basic model can teach us important lessons about data, bias, and the ethical considerations of artificial intelligence.</p>
+        </section>
+
+        <section>
+            <h2>The Process: Building a Sound Classifier</h2>
+            <p>Our project focused on classifying seven distinct audio categories:</p>
+            <ul>
+                <li>Hello (spoken greeting)</li>
+                <li>Background Noise (ambient sounds)</li>
+                <li>Clapping</li>
+                <li>Snapping</li>
+                <li>Coughing</li>
+                <li>Humming</li>
+                <li>Whistling</li>
+            </ul>
+            <p>Despite the model's simplicity, it was clear that even small changes in the way we recorded the sounds could dramatically affect its performance. For example, a loud cough might be correctly classified, but a soft one would occasionally be misinterpreted as background noise. This made us realize how sensitive even a basic model can be to factors like volume, pitch, and recording quality. While these adjustments were manageable, they pointed to the importance of data quality and variability in training an effective machine learning model.</p>
+            <p>Once our model was trained, we integrated it into a webpage using TensorFlow.js. The model runs directly in the browser and provides real-time feedback about the probability that an audio input belongs to each category. This real-time functionality allowed us to test the model with different sounds in various environments, offering a more interactive learning experience.</p>
+        </section>
+
+        <section>
+            <h2>Challenges and Ethical Considerations</h2>
+            <p>While the technical aspects of building the model were relatively simple, the experience prompted us to think more deeply about the broader implications of machine learning technology.</p>
+            <h3>1. Data Generalization and Bias:</h3>
+            <p>The primary challenge we faced was ensuring that our model could generalize beyond the specific sounds we trained it on. Because we used a very small set of data—mostly sounds recorded by the group—there were limitations in how well the model performed with new sounds. This reminded us of the importance of using diverse datasets in machine learning to avoid bias.</p>
+
+            <h3>2. Contextual Understanding:</h3>
+            <p>Another key lesson was the model’s inability to understand the context behind the sounds it classified. For example, the model could distinguish between a "whistle" and a "cough," but it had no understanding of the context in which the sounds were made. This lack of contextual awareness is a recurring theme in AI discussions. While our model was simple, this lack of understanding is an issue that extends to more advanced systems as well.</p>
+
+            <h3>3. The Illusion of Objectivity:</h3>
+            <p>Even though our model is basic, it reinforced an important concept: the idea that AI is often presented as objective and impartial, yet it is shaped by the biases and assumptions of its creators. Our own model was influenced by the data we provided—our voices, our environment, our choices in selecting sounds. While the results may seem “neutral,” the underlying assumptions can still affect the model’s accuracy and fairness.</p>
+        </section>
+
+      <!-- Embedded video section -->
+<div style="text-align: center; margin-top: 30px;">
+  <video width="600" controls>
+    <source src="FinalTM.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+        <section>
+            <h2>Lessons from Unmasking AI in Our Work</h2>
+            <p>As we built and tested our sound classifier, many of the lessons from Buolamwini’s *Unmasking AI* resonated with our experience, especially regarding bias, fairness, and the need for more thoughtful AI development.</p>
+            <h3>1. Bias in Data and Models:</h3>
+            <p>The most immediate lesson we took from Buolamwini’s work is the need to ensure that AI models are trained on diverse, representative data. In our case, the model’s limited ability to generalize from a small, homogeneous dataset made it clear that bias can creep into even the simplest machine learning systems.</p>
+
+            <h3>2. The Importance of Transparency and Accountability:</h3>
+            <p>Another important takeaway is the need for transparency in AI development. Our simple model doesn’t have the same real-world implications as more complex AI systems, but it still highlighted the importance of being able to explain and understand how an AI makes its decisions.</p>
+
+            <h3>3. The Ethical Responsibility of AI Developers:</h3>
+            <p>Finally, *Unmasking AI* reinforces the ethical responsibility of AI developers. Even with a simple classifier, we had an ethical duty to ensure that the system was fair, transparent, and inclusive. This awareness will be crucial as we continue to engage with AI technologies in the future.</p>
+        </section>
+
+        <section>
+            <h2>Conclusion: The Power of Simplicity in Machine Learning</h2>
+            <p>In conclusion, while our sound classification model is simple and limited in scope, it has provided us with important insights into the process of machine learning and the ethical considerations that come with it. Even basic AI systems are shaped by the data we feed them, and ethical considerations are vital at every stage of development.</p>
+            <p>As we look to expand our model in the future, we plan to incorporate a more diverse set of sounds, refine the classification process, and explore ways to make the model more transparent and accountable. This project has been a valuable learning experience and a reminder that even the most straightforward AI systems are not free from bias and should be handled with care and responsibility.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Teachable Machines W/ Kylie & Ayra :) </p>
+    </footer>
+</body>
+
+</html>
